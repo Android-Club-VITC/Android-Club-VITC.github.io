@@ -48,9 +48,9 @@
  *  # features
  *    ## features list
  *  # ourteam
- *  # pricing
- *    ## pricing plan blocks
- *  # download
+ *  # events
+ *    ## events plan blocks
+ *  # showcase
  *  # footer
  *    ## subscribe form
  *    ## footer social
@@ -3406,10 +3406,10 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # pricing
+ * # events
  *
  * ------------------------------------------------------------------- */
-.s-pricing {
+.s-events {
   padding-top: 19.2rem;
   padding-bottom: 16rem;
   background-color: #ffffff;
@@ -3418,7 +3418,7 @@ html.no-csstransitions .home-content__main {
 
 
 /* ------------------------------------------------------------------- 
- * ## pricing plan blocks
+ * ## events plan blocks
  * ------------------------------------------------------------------- */
 .plans {
   margin-top: 6.4rem;
@@ -3530,10 +3530,10 @@ html.no-csstransitions .home-content__main {
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * pricing
+ * events
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1200px) {
-  .s-pricing {
+  .s-events {
     padding-top: 18.4rem;
   }
 
@@ -3544,7 +3544,7 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width:1000px) {
-  .s-pricing {
+  .s-events {
     padding-top: 17.2rem;
     padding-bottom: 17.2rem;
   }
@@ -3552,7 +3552,7 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width:800px) {
-  .s-pricing {
+  .s-events {
     padding-top: 16rem;
     padding-bottom: 14.8rem;
   }
@@ -3564,7 +3564,7 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width:600px) {
-  .s-pricing {
+  .s-events {
     padding-top: 14.8rem;
     padding-bottom: 12rem;
   }
@@ -3592,10 +3592,10 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # download
+ * # showcase
  *
  * ------------------------------------------------------------------- */
-.s-download {
+.s-showcase {
   padding-top: 18.4rem;
   background-color: #3ddc84;
   color: rgba(255, 255, 255, 0.8);
@@ -3603,27 +3603,27 @@ html.no-csstransitions .home-content__main {
   position: relative;
 }
 
-.s-download .display-1,
-.s-download h3 {
+.s-showcase .display-1,
+.s-showcase h3 {
   color: #ffffff;
 }
 
-.s-download p.lead {
+.s-showcase p.lead {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.s-download .download-badges {
+.s-showcase .showcase-badges {
   list-style: none;
   margin: 1.2rem 0 0 -6px;
 }
 
-.s-download .download-badges li {
+.s-showcase .showcase-badges li {
   display: inline-block;
   margin: 0 6px;
   padding-left: 0;
 }
 
-.s-download .download-badges li a {
+.s-showcase .showcase-badges li a {
   display: block;
   width: 232px;
   height: 72px;
@@ -3635,33 +3635,33 @@ html.no-csstransitions .home-content__main {
   background-size: 232px 72px;
 }
 
-.s-download .download-badges li a.badge-appstore {
+.s-showcase .showcase-badges li a.badge-appstore {
   background-image: url("../images/appstore.png");
 }
 
-.s-download .download-badges li a.badge-googleplay {
+.s-showcase .showcase-badges li a.badge-googleplay {
   background-image: url("../images/google-play.png");
 }
 
-.s-download .download-bottom-image {
+.s-showcase .showcase-bottom-image {
   margin-top: 11.2rem;
 }
 
-.s-download .download-bottom-image img {
+.s-showcase .showcase-bottom-image img {
   vertical-align: bottom;
 }
 
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * download
+ * showcase
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1200px) {
-  .s-download .download-content__badges {
+  .s-showcase .showcase-content__badges {
     margin: 0;
   }
 
-  .s-download .download-content__image {
+  .s-showcase .showcase-content__image {
     position: static;
     margin: 0 auto;
     max-width: 480px;
@@ -3672,18 +3672,18 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width:1000px) {
-  .s-download {
+  .s-showcase {
     padding-top: 17.2rem;
   }
 
 }
 
 @media only screen and (max-width:800px) {
-  .s-download {
+  .s-showcase {
     padding-top: 16rem;
   }
 
-  .s-download .download-content__badges li a {
+  .s-showcase .showcase-content__badges li a {
     width: 206px;
     height: 64px;
     background-size: 206px 64px;
@@ -3692,11 +3692,11 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width:600px) {
-  .s-download {
+  .s-showcase {
     padding-top: 14.8rem;
   }
 
-  .s-download .download-bottom-image {
+  .s-showcase .showcase-bottom-image {
     margin-top: 9.6rem;
   }
 
