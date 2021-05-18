@@ -34,7 +34,7 @@
     padding: 30px;
     background: rgba(0,0,0,.5);
     box-sizing: border-box;
-    transition: 0.01s;
+    transition: 0.001s;
 }
 .slider_container .slider .slide .caption .slider_title
 {
