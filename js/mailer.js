@@ -4,7 +4,7 @@ const handleMail = async () => {
 
 	for (const i of dataArr){
 		if(i.name!="submit")
-			data[i.name] = i.value
+			data[i.name] = i.value?i.value : "none"
 	}
 	document.forms['app_dev_form'].reset()
 

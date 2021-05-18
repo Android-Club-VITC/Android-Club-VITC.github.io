@@ -319,30 +319,49 @@
 
         <div class="row showcase-bottom-image" data-aos="fade-up">
             <div class="form-container" id="contact-form">
-                <form name="app_dev_form" onsubmit="event.preventDefault(); handleMail()">
+                <form name="app_dev_form" onsubmit="event.preventDefault(); validate()?handleMail():NULL">
               
-                  <label for="name" class="label-name">Name</label>
-                  <input type="text" id="name" name="company_name" placeholder="Company Name/Individual Name">
-              
-                  <label for="email" class="label-name">Email</label>
-                  <input type="email" name="sender_email" id="email" placeholder="Contact Email" style="width: 100%;">
-
-                  <label for="contact" class="label-contact">Contact</label>
-                  <input type="text" name="contact" id="contact" placeholder="Contact number" style="width: 100%;">
+                  <label for="name" class="label-name">Name <br>
+                    <div id="name_err" style="display: absolute"></div>  
+                  </label>
+                  <input type="text" id="name" name="company_name" placeholder="Company Name/Individual Name" onblur="validate()">
                     
-                  <label for="project-details" class="label-name">Project Details</label> 
-                  <textarea id="details" name="project_details" placeholder="Your project details" style="height:200px"></textarea>
-              
-                  <label for="budget" class="label-name">Approximate Budget</label> 
-                  <input type="text" id="budget" name="approx_budget" placeholder="Amount">
 
-                  <label for="timeline" class="label-name">Approximate Timeline</label> 
-                  <input type="text" id="timeline" name="approx_timeline" placeholder="Expected Development time in months">
+                  <label for="email" class="label-name">Email <br>
+                    <div id="email_err" style="display:  absolute"></div>
+                  </label>
+                  <input type="email" name="sender_email" id="email" placeholder="Contact Email" style="width: 100%;" onblur="validate()">
+                  
+
+
+                  <label for="contact" class="label-name">Contact <br>
+                    <div id="contact_err" style="display:  absolute"></div>
+                  </label>
+                  <input type="text" name="contact" id="contact" placeholder="Contact number" style="width: 100%;" onblur="validate()">
+                  
+                    
+                  <label for="project-details" class="label-name">Project Details <br>
+                    <div id="project_err" style="display:  absolute"></div>
+                  </label> 
+                  <textarea id="project" name="project_details" placeholder="Your project details" style="height:200px" onblur="validate()"></textarea>
+                  
+              
+                  <label for="budget" class="label-name">Approximate Budget <br>
+                    <div id="budget_err" style="display:  absolute"></div>
+                  </label> 
+                  <input type="text" id="budget" name="approx_budget" placeholder="Amount" onblur="validate()">
+                  
+
+                  <label for="timeline" class="label-name">Approximate Timeline <br>
+                    <div id="timeline_err" style="display:  absolute"></div>
+                  </label> 
+                  <input type="text" id="timeline" name="approx_timeline" placeholder="Expected Development time in months" onblur="validate()">
+                  
 
                   <label for="other" class="label-name">Other Details</label> 
                   <input type="text" id="other" name="other_details" placeholder="Notes, special insttructions,etc">
 
-                  <input type="submit" name="submit"/>
+                  <input type="submit" name="submit" id="submit_btn" />
               
                 </form>
               </div>
@@ -414,7 +433,7 @@
                         <h4>Contact Us.</h4>
 
                         <p>
-                        Email: androidclub@vitcc.com
+                        Email: androidclub@vit.ac.in
                         </p>
                         
                     </div>
@@ -438,4 +457,5 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script src="js/mailer.js"></script>
+    <script src="js/submit.js"></script>
 </body>
