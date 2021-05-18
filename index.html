@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/error.css">
 
     <!-- script
     ================================================== -->
@@ -318,27 +319,30 @@
 
         <div class="row showcase-bottom-image" data-aos="fade-up">
             <div class="form-container" id="contact-form">
-                <form>
+                <form name="app_dev_form" onsubmit="event.preventDefault(); handleMail()">
               
                   <label for="name" class="label-name">Name</label>
-                  <input type="text" id="name" name="name" placeholder="Company Name/Individual Name">
+                  <input type="text" id="name" name="company_name" placeholder="Company Name/Individual Name">
               
                   <label for="email" class="label-name">Email</label>
-                  <input type="email" name="email" id="email" placeholder="Contact Email" style="width: 100%;">
+                  <input type="email" name="sender_email" id="email" placeholder="Contact Email" style="width: 100%;">
+
+                  <label for="contact" class="label-contact">Contact</label>
+                  <input type="text" name="contact" id="contact" placeholder="Contact number" style="width: 100%;">
                     
                   <label for="project-details" class="label-name">Project Details</label> 
-                  <textarea id="details" name="details" placeholder="Your project details" style="height:200px"></textarea>
+                  <textarea id="details" name="project_details" placeholder="Your project details" style="height:200px"></textarea>
               
                   <label for="budget" class="label-name">Approximate Budget</label> 
-                  <input type="text" id="budget" name="budget" placeholder="Amount">
+                  <input type="text" id="budget" name="approx_budget" placeholder="Amount">
 
                   <label for="timeline" class="label-name">Approximate Timeline</label> 
-                  <input type="text" id="timeline" name="timeline" placeholder="Expected Development time in months">
+                  <input type="text" id="timeline" name="approx_timeline" placeholder="Expected Development time in months">
 
                   <label for="other" class="label-name">Other Details</label> 
-                  <input type="text" id="other" name="other" placeholder="Notes, special insttructions,etc">
+                  <input type="text" id="other" name="other_details" placeholder="Notes, special insttructions,etc">
 
-                  <input type="submit" name="subscribe" value="Send">
+                  <input type="submit" name="submit"/>
               
                 </form>
               </div>
@@ -433,5 +437,5 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
+    <script src="js/mailer.js"></script>
 </body>
