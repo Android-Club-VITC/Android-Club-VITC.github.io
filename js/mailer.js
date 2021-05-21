@@ -9,7 +9,7 @@ const handleMail = async () => {
 	document.forms['app_dev_form'].reset()
 
 	try{
-		const res = await fetch(`https://fierce-woodland-63982.herokuapp.com/api/sendmail`,{
+		const res = await fetch(`https://fierce-woodland-63982.herokuapp.com/api/mail/sendmail`,{
 			method: 'POST', 
 			headers: {
 				'Content-Type': 'application/json'

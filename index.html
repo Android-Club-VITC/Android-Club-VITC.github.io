@@ -391,11 +391,11 @@
 
             <div class="col-full footer__subscribe end">
                 <div class="subscribe-form">
-                    <form id="mc-form" class="group" novalidate="true">
+                    <form id="mc-form" class="group" novalidate="true" onsubmit="event.preventDefault(); handleSubscription()">
 
-                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
+                        <input type="email" value="" name="email" class="email" id="mc-email" placeholder="Email Address" required="">
             
-                        <input type="submit" name="subscribe" value="Send">
+                        <input type="submit" name="submit" value="Send">
             
                         <label for="mc-email" class="subscribe-message"></label>
             
