@@ -7,7 +7,6 @@ const handleSubscription = async () => {
 			data[i.name] = i.value
 	}
 	document.forms['mc-form'].reset()
-	console.log(data)
 	try{
 		const res = await fetch(`https://fierce-woodland-63982.herokuapp.com/api/newsletter/subscribe`,{
 			method: 'POST', 
