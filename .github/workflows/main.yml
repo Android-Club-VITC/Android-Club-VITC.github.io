@@ -14,7 +14,6 @@ jobs:
         run: |
           mkdir public
           cp ./*.html public/
-          cp ./*.css public/
           cp -r css public/
           cp -r images public/
           cp -r js public/
