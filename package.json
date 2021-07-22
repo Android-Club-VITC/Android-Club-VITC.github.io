@@ -1,0 +1,22 @@
+{
+  "name": "ac-website",
+  "version": "1.0.0",
+  "description": "Android Club Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Android-Club-VITC/ac-website.git"
+  },
+  "author": "AC core",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Android-Club-VITC/ac-website/issues"
+  },
+  "homepage": "https://github.com/Android-Club-VITC/ac-website#readme",
+  "dependencies": {
+    "firebase-tools": "^9.16.0"
+  }
+}
