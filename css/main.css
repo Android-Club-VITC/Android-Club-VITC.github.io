@@ -3252,7 +3252,7 @@ html.no-csstransitions .home-content__main {
 .ourteam__avatar {
   width: 7.2rem;
   height: 7.2rem;
-  border-radius: 100%;
+  border-radius: 50%;
   outline: none;
   position: absolute;
   top: 0;
