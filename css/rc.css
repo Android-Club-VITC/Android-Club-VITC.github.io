@@ -78,6 +78,16 @@ content: '';
     opacity: 0;
   }
 }
+.evolve{
+  margin-top: 20px;
+}
+.evolve a{
+  margin-top: 30px;
+  background-color: #e04b19;
+  padding: 2%;
+  border-radius: 50px;
+  color: #fff;
+}
 
 .discord a {
   background-color: #5865F2;
