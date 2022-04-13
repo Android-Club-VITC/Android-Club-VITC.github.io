@@ -74,6 +74,12 @@
     background-size: cover;
     background-position: center;
 }
+.slider_container .slider .slide.slide5
+{
+    background: url(../images/evolve.gif);
+    background-size: cover;
+    background-position: center;
+}
 
 @keyframes  slideshow
 {
@@ -81,36 +87,39 @@
     {
         left: 0;
     }
-    20%
+    18%
     {
         left: 0;
     }
-    25%
+    20%
     {
         left: -100%;
     }
-    45%
+    38%
     {
         left: -100%;
     }
-    50%
+    40%
     {
         left: -200%;
     }
-    70%
+    58%
     {
         left: -200%;
     }
-    75%
+    60%
     {
         left: -300%;
     }
-    95%
+    78%
     {
         left: -300%;
     }
-    100%
+    80%
     {
+        left: -400%;
+    }
+    98%{
         left: -400%;
     }
 
